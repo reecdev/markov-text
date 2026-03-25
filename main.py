@@ -12,7 +12,7 @@ def predict(word):
     else:
         return random.choice(tokens)
     
-data = ""
+data = input(">> ")
 
 for word in data.split(" "):
     tokens.append(word)
@@ -27,9 +27,7 @@ for i, word in enumerate(tokens):
 
 # ------------------------------------------------------------------------------------------------
 
-prompt = "the"
-
-context = prompt.split(" ")
+context = data
 print(prompt, end=" ")
 for i in range(10000):
     prediction = predict(context[len(context)-1])
