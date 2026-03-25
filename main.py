@@ -28,7 +28,7 @@ for i, word in enumerate(tokens):
 # ------------------------------------------------------------------------------------------------
 
 context = data.split(" ")
-print(context, end=" ")
+print(data, end=" ")
 for i in range(255):
     prediction = predict(context[len(context)-1])
     context.append(prediction)
